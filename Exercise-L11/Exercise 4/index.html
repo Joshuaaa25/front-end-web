@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Global Scope</title>
+</head>
+<body>
+    <script>
+        //variable ini dpaat diakses dari aman saja
+        const globalVar= 50;
+
+        //function
+        function globalFunction() {
+            console.log(globalVar);
+        }
+
+        //call function
+        globalFunction(); //50
+    </script>
+</body>
+</html>

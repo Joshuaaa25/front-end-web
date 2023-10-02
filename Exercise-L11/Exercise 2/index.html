@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Scope using var</title>
+</head>
+<body>
+    <script>
+        function exampleFunction() {
+            var a = 5; // acess here only
+            console.log("Nilai a:", a); // 5
+        }
+
+        //call function
+        exampleFunction();
+
+        // a tidak dpt diakses diluar funsi
+        console.log("nilai a di luar fungsi:", a) // error
+    </script>
+</body>
+</html>

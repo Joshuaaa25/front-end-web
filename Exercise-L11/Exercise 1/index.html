@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Block Scope with let</title>
+</head>
+<body>
+    <script>
+        if (true) {
+            let x = 10; // x hanya di=pt diakses dlm blok ini
+            const y = 20; // y also hanya dlm sini
+            console.log("NIlai x:", x); // output 10
+            console.log("Nilai y:", y); // 20
+        }
+
+        // x dan y tidak bisa diakses di luar blok ini
+        console.log("Nilai x di luar blok:",x); //error
+    </script>
+</body>
+</html>
